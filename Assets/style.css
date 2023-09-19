@@ -1,0 +1,42 @@
+/* css variable declaration */
+:root {
+    --navy: #181c39;
+    --light: #e6ecfc;
+    --darkblue: #273176;
+    --gray: #f7f2f8;
+    --white: #ffffff;  
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar {
+    background-color: var(--navy);
+    color: var(--light);
+}
+
+.cardpad {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+/* media queries mobile  */
+   @media (max-width: 481px) { /* navbar fullscreen on mobile collapse */
+    .navbar-nav {
+      height: 100vh;
+   }
+ }
+
+ /* media queries tablet  */
+ @media (max-width: 768px) {
+    .navbar-nav {
+      height: 100vh;
+   }
+ }
+
+
+ 
