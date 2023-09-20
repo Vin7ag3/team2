@@ -38,5 +38,10 @@ body {
    }
  }
 
+ @media (max-width: 992px) { 
+  #pet-form {
+      display: none; 
+  }
+}
 
  
