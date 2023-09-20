@@ -24,6 +24,7 @@ body {
   margin-top: 100px;
 }
 
+
 /* media queries mobile  */
    @media (max-width: 481px) { /* navbar fullscreen on mobile collapse */
     .navbar-nav {
