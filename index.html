@@ -23,9 +23,13 @@
         </div>
         <!-- Form inside the navbar -->
         <form id="pet-form">
-            <label for="animal">Animal:</label>
-            <input type="text" id="animal" placeholder="Enter animal type" required>
-            <label for="zip">ZIP Code:</label>
+                <div class ="dropdown">
+                    <button class="dropbtn">Animal Type</button>
+                        <div class ="dropdown-content">
+                            <a href="#">Cats</a>
+                            <a href="#">Dogs</a>
+                        </div>
+            <label for="zip"> ZIP Code: </label>
             <input type="text" id="zip" placeholder="Enter ZIP code" required>
             <button type="submit" class="btn btn-primary">Search</button>
         </form>
