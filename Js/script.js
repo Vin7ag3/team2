@@ -70,3 +70,22 @@ function fetchAnimals(e) {
       }
     }
   }
+
+/* Geolocation Pop Up */
+
+let current_location = document.getElementById("location");
+const success = (position) => {
+  const longitude = position.coords.longitude;
+  const latitude = position.coords.latitude;
+  
+  current_location.textContent = `Longitute = ${longitude} \n latitude = ${latitude}`;
+}
+const error = (error) => {
+  current_location.textContent = `Couldn't access your location \n Reason: ${PositionError.message}`;
+}
+const getLocation = () => {
+  if(navigator.geolocation)
+    navigator.geolocation.getCurrentPosition(success,error);
+  else 
+    current_location.textContent = `Your browser does not support this feature`;
+}
