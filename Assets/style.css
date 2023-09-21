@@ -108,6 +108,11 @@ button {
   color: var(--light);
 } */
 
+.pet-imgs {
+  max-width: 70%;
+  max-height: 200px;
+}
+
 .btn {
   height: 30px;
   width: 105px;
