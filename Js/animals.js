@@ -1,7 +1,6 @@
 function fetchAnimals(e) {
     e.preventDefault();
-    localStorage.removeItem('responseData');
-  
+      
     const animal = document.querySelector('#animal').value;
     const zip = document.querySelector('#zip').value;
     const clientId = 'HHRUxcBG0cLtwB0LSBvqAZAYDpF6BnioiSgK0iHJ7kc6YdNtUV';
@@ -55,12 +54,12 @@ function fetchAnimals(e) {
     // Card 1
     
     const fetchedPet1 = animalData.animals[0];
-    const petName1 = document.getElementById('name1');
-    const petBreed1 = document.getElementById('breed1');
-    const petAge1 = document.getElementById('age1');
-    const petGender1 = document.getElementById('gender1');
-    const phone1 = document.getElementById('phone1');
-    const email1 = document.getElementById('email1');
+    const petName1 = document.getElementById('name1').firstChild;
+    const petBreed1 = document.getElementById('breed1').firstChild;
+    const petAge1 = document.getElementById('age1').firstChild;
+    const petGender1 = document.getElementById('gender1').firstChild;
+    const phone1 = document.getElementById('phone1').firstChild;
+    const email1 = document.getElementById('email1').firstChild;
     petName1.replaceWith("Pet Name: " + fetchedPet1.name);    
     petBreed1.replaceWith("Breed: " + fetchedPet1.breeds.primary);    
     petAge1.replaceWith("Age: " + fetchedPet1.age);
@@ -82,12 +81,12 @@ function fetchAnimals(e) {
     // Card 2        
     
     const fetchedPet2 = animalData.animals[1];
-    const petName2 = document.getElementById('name2');
-    const petBreed2 = document.getElementById('breed2');
-    const petAge2 = document.getElementById('age2');
-    const petGender2 = document.getElementById('gender2');
-    const phone2 = document.getElementById('phone2');
-    const email2 = document.getElementById('email2');
+    const petName2 = document.getElementById('name2').firstChild;
+    const petBreed2 = document.getElementById('breed2').firstChild;
+    const petAge2 = document.getElementById('age2').firstChild;
+    const petGender2 = document.getElementById('gender2').firstChild;
+    const phone2 = document.getElementById('phone2').firstChild;
+    const email2 = document.getElementById('email2').firstChild;
     petName2.replaceWith("Pet Name: " + fetchedPet2.name);    
     petBreed2.replaceWith("Breed: " + fetchedPet2.breeds.primary);    
     petAge2.replaceWith("Age: " + fetchedPet2.age);
@@ -107,12 +106,12 @@ function fetchAnimals(e) {
     // Card 3   
     
     const fetchedPet3 = animalData.animals[2];
-    const petName3 = document.getElementById('name3');
-    const petBreed3 = document.getElementById('breed3');
-    const petAge3 = document.getElementById('age3');
-    const petGender3 = document.getElementById('gender3');
-    const phone3 = document.getElementById('phone3');
-    const email3 = document.getElementById('email3');
+    const petName3 = document.getElementById('name3').firstChild;
+    const petBreed3 = document.getElementById('breed3').firstChild;
+    const petAge3 = document.getElementById('age3').firstChild;
+    const petGender3 = document.getElementById('gender3').firstChild;
+    const phone3 = document.getElementById('phone3').firstChild;
+    const email3 = document.getElementById('email3').firstChild;
     petName3.replaceWith("Pet Name: " + fetchedPet3.name);    
     petBreed3.replaceWith("Breed: " + fetchedPet3.breeds.primary);    
     petAge3.replaceWith("Age: " + fetchedPet3.age);
@@ -132,12 +131,12 @@ function fetchAnimals(e) {
     // Card 4
     
     const fetchedPet4 = animalData.animals[3];
-    const petName4 = document.getElementById('name4');
-    const petBreed4 = document.getElementById('breed4');
-    const petAge4 = document.getElementById('age4');
-    const petGender4 = document.getElementById('gender4');
-    const phone4 = document.getElementById('phone4');
-    const email4 = document.getElementById('email4');
+    const petName4 = document.getElementById('name4').firstChild;
+    const petBreed4 = document.getElementById('breed4').firstChild;
+    const petAge4 = document.getElementById('age4').firstChild;
+    const petGender4 = document.getElementById('gender4').firstChild;
+    const phone4 = document.getElementById('phone4').firstChild;
+    const email4 = document.getElementById('email4').firstChild;
     petName4.replaceWith("Pet Name: " + fetchedPet4.name);    
     petBreed4.replaceWith("Breed: " + fetchedPet4.breeds.primary);    
     petAge4.replaceWith("Age: " + fetchedPet4.age);
@@ -156,12 +155,12 @@ function fetchAnimals(e) {
     // Card 5
     
     const fetchedPet5 = animalData.animals[4];
-    const petName5 = document.getElementById('name5');
-    const petBreed5 = document.getElementById('breed5');
-    const petAge5 = document.getElementById('age5');
-    const petGender5 = document.getElementById('gender5');
-    const phone5 = document.getElementById('phone5');
-    const email5 = document.getElementById('email5');
+    const petName5 = document.getElementById('name5').firstChild;
+    const petBreed5 = document.getElementById('breed5').firstChild;
+    const petAge5 = document.getElementById('age5').firstChild;
+    const petGender5 = document.getElementById('gender5').firstChild;
+    const phone5 = document.getElementById('phone5').firstChild;
+    const email5 = document.getElementById('email5').firstChild;
     petName5.replaceWith("Pet Name: " + fetchedPet5.name);    
     petBreed5.replaceWith("Breed: " + fetchedPet5.breeds.primary);    
     petAge5.replaceWith("Age: " + fetchedPet5.age);
@@ -181,12 +180,12 @@ function fetchAnimals(e) {
     // Card 6
     
     const fetchedPet6 = animalData.animals[5];
-    const petName6 = document.getElementById('name6');
-    const petBreed6 = document.getElementById('breed6');
-    const petAge6 = document.getElementById('age6');
-    const petGender6 = document.getElementById('gender6');
-    const phone6 = document.getElementById('phone6');
-    const email6 = document.getElementById('email6');
+    const petName6 = document.getElementById('name6').firstChild;
+    const petBreed6 = document.getElementById('breed6').firstChild;
+    const petAge6 = document.getElementById('age6').firstChild;
+    const petGender6 = document.getElementById('gender6').firstChild;
+    const phone6 = document.getElementById('phone6').firstChild;
+    const email6 = document.getElementById('email6').firstChild;
     petName6.replaceWith("Pet Name: " + fetchedPet6.name);    
     petBreed6.replaceWith("Breed: " + fetchedPet6.breeds.primary);    
     petAge6.replaceWith("Age: " + fetchedPet6.age);
@@ -206,12 +205,12 @@ function fetchAnimals(e) {
     // Card 7
     
     const fetchedPet7 = animalData.animals[6];
-    const petName7 = document.getElementById('name7');
-    const petBreed7 = document.getElementById('breed7');
-    const petAge7 = document.getElementById('age7');
-    const petGender7 = document.getElementById('gender7');
-    const phone7 = document.getElementById('phone7');
-    const email7 = document.getElementById('email7');
+    const petName7 = document.getElementById('name7').firstChild;
+    const petBreed7 = document.getElementById('breed7').firstChild;
+    const petAge7 = document.getElementById('age7').firstChild;
+    const petGender7 = document.getElementById('gender7').firstChild;
+    const phone7 = document.getElementById('phone7').firstChild;
+    const email7 = document.getElementById('email7').firstChild;
     petName7.replaceWith("Pet Name: " + fetchedPet7.name);    
     petBreed7.replaceWith("Breed: " + fetchedPet7.breeds.primary);    
     petAge7.replaceWith("Age: " + fetchedPet7.age);
@@ -230,12 +229,12 @@ function fetchAnimals(e) {
     // Card 8
    
     const fetchedPet8 = animalData.animals[7];
-    const petName8 = document.getElementById('name8');
-    const petBreed8 = document.getElementById('breed8');
-    const petAge8 = document.getElementById('age8');
-    const petGender8 = document.getElementById('gender8');
-    const phone8 = document.getElementById('phone8');
-    const email8 = document.getElementById('email8');
+    const petName8 = document.getElementById('name8').firstChild;
+    const petBreed8 = document.getElementById('breed8').firstChild;
+    const petAge8 = document.getElementById('age8').firstChild;
+    const petGender8 = document.getElementById('gender8').firstChild;
+    const phone8 = document.getElementById('phone8').firstChild;
+    const email8 = document.getElementById('email8').firstChild;
     petName8.replaceWith("Pet Name: " + fetchedPet8.name);    
     petBreed8.replaceWith("Breed: " + fetchedPet8.breeds.primary);    
     petAge8.replaceWith("Age: " + fetchedPet8.age);
@@ -255,12 +254,12 @@ function fetchAnimals(e) {
     // Card 9
     
     const fetchedPet9 = animalData.animals[8];
-    const petName9 = document.getElementById('name9');
-    const petBreed9 = document.getElementById('breed9');
-    const petAge9 = document.getElementById('age9');
-    const petGender9 = document.getElementById('gender9');
-    const phone9 = document.getElementById('phone9');
-    const email9 = document.getElementById('email9');
+    const petName9 = document.getElementById('name9').firstChild;
+    const petBreed9 = document.getElementById('breed9').firstChild;
+    const petAge9 = document.getElementById('age9').firstChild;
+    const petGender9 = document.getElementById('gender9').firstChild;
+    const phone9 = document.getElementById('phone9').firstChild;
+    const email9 = document.getElementById('email9').firstChild;
     petName9.replaceWith("Pet Name: " + fetchedPet9.name);    
     petBreed9.replaceWith("Breed: " + fetchedPet9.breeds.primary);    
     petAge9.replaceWith("Age: " + fetchedPet9.age);
