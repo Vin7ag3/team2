@@ -19,7 +19,6 @@
             <ul class="navbar-nav">
                 <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
                 <li class="nav-item active"><a class="nav-link" href="#">Favorites</a></li>
-
             </ul>
         </div>
         <!-- Form inside the navbar -->
@@ -33,6 +32,8 @@
                             </select>
                         </div>
                 </div>
+                <label for="zip">ZIP Code:</label>
+                    <input type="text" id="zip" placeholder="Enter ZIP code" required>
                 <button type="submit" onclick="fetchAnimals()">Submit</button>
             <button id="location" onclick = 'getLocation()' type="button">Geolocate</button>
         </form>

@@ -2,6 +2,7 @@ function fetchAnimals(e) {
     e.preventDefault();
   
     const animal = document.querySelector('#animal').value;
+    const zip = document.querySelector('#zip').value;
     const clientId = 'HHRUxcBG0cLtwB0LSBvqAZAYDpF6BnioiSgK0iHJ7kc6YdNtUV';
     const clientSecret = 'xTg1ROLZKJUN1oF6E09Vdku0dkgsrjuu3tuMby7W';
     const tokenUrl = 'https://api.petfinder.com/v2/oauth2/token';
@@ -23,7 +24,7 @@ function fetchAnimals(e) {
         const accessToken = tokenData.access_token;
   
         // access token to fetch animal data
-        fetch(`https://api.petfinder.com/v2/animals?type=${animal}`, {
+        fetch(`https://api.petfinder.com/v2/animals?type=${animal}&location=${zip}`, {
           method: 'GET',
           headers: {
             Authorization: `Bearer ${accessToken}`,
