@@ -1,5 +1,6 @@
 function fetchAnimals(e) {
     e.preventDefault();
+    localStorage.removeItem('responseData');
       
     const animal = document.querySelector('#animal').value;
     const zip = document.querySelector('#zip').value;
