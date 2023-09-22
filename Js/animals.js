@@ -275,6 +275,231 @@ function fetchAnimals(e) {
     } else {
       document.getElementById('pet-img-9').src = petImg9Link;
     }
+
+   // Card 10
+    
+   const fetchedPet10 = animalData.animals[9];
+   const petName10 = document.getElementById('name10').firstChild;
+   const petBreed10 = document.getElementById('breed10').firstChild;
+   const petAge10 = document.getElementById('age10').firstChild;
+   const petGender10 = document.getElementById('gender10').firstChild;
+   const phone10 = document.getElementById('phone10').firstChild;
+   const email10 = document.getElementById('email10').firstChild;
+   petName10.replaceWith("Pet Name: " + fetchedPet10.name);    
+   petBreed10.replaceWith("Breed: " + fetchedPet10.breeds.primary);    
+   petAge10.replaceWith("Age: " + fetchedPet10.age);
+   petGender10.replaceWith("Gender: " + fetchedPet10.gender);
+   phone10.replaceWith('Phone Number: ' + fetchedPet10.contact.phone);
+   email10.replaceWith("Email: " + fetchedPet10.contact.email);
+
+   // image10 section
+   var petImg10Link = fetchedPet10.photos.length > 0 ? fetchedPet10.photos[0].full : undefined;
+
+   if (petImg10Link === undefined) {
+     document.getElementById('pet-img-10').src = "./Assets/no-image-icon.jpg";
+   } else {
+     document.getElementById('pet-img-10').src = petImg10Link;
+   }
+
+    // Card 11
+    
+    const fetchedPet11 = animalData.animals[10];
+    const petName11 = document.getElementById('name11').firstChild;
+    const petBreed11 = document.getElementById('breed11').firstChild;
+    const petAge11 = document.getElementById('age11').firstChild;
+    const petGender11 = document.getElementById('gender11').firstChild;
+    const phone11 = document.getElementById('phone11').firstChild;
+    const email11 = document.getElementById('email11').firstChild;
+    petName11.replaceWith("Pet Name: " + fetchedPet11.name);    
+    petBreed11.replaceWith("Breed: " + fetchedPet11.breeds.primary);    
+    petAge11.replaceWith("Age: " + fetchedPet11.age);
+    petGender11.replaceWith("Gender: " + fetchedPet11.gender);
+    phone11.replaceWith('Phone Number: ' + fetchedPet11.contact.phone);
+    email11.replaceWith("Email: " + fetchedPet11.contact.email);
+
+    // image11 section
+    var petImg11Link = fetchedPet11.photos.length > 0 ? fetchedPet11.photos[0].full : undefined;
+
+    if (petImg11Link === undefined) {
+      document.getElementById('pet-img-11').src = "./Assets/no-image-icon.jpg";
+    } else {
+      document.getElementById('pet-img-11').src = petImg11Link;
+    }
+
+     // Card 12
+    
+     const fetchedPet12 = animalData.animals[11];
+     const petName12 = document.getElementById('name12').firstChild;
+     const petBreed12 = document.getElementById('breed12').firstChild;
+     const petAge12 = document.getElementById('age12').firstChild;
+     const petGender12 = document.getElementById('gender12').firstChild;
+     const phone12 = document.getElementById('phone12').firstChild;
+     const email12 = document.getElementById('email12').firstChild;
+     petName12.replaceWith("Pet Name: " + fetchedPet12.name);    
+     petBreed12.replaceWith("Breed: " + fetchedPet12.breeds.primary);    
+     petAge12.replaceWith("Age: " + fetchedPet12.age);
+     petGender12.replaceWith("Gender: " + fetchedPet12.gender);
+     phone12.replaceWith('Phone Number: ' + fetchedPet12.contact.phone);
+     email12.replaceWith("Email: " + fetchedPet12.contact.email);
+ 
+     // image12 section
+     var petImg12Link = fetchedPet12.photos.length > 0 ? fetchedPet12.photos[0].full : undefined;
+ 
+     if (petImg12Link === undefined) {
+       document.getElementById('pet-img-12').src = "./Assets/no-image-icon.jpg";
+     } else {
+       document.getElementById('pet-img-12').src = petImg12Link;
+     }
+
+      // Card 13
+    
+    const fetchedPet13 = animalData.animals[12];
+    const petName13 = document.getElementById('name13').firstChild;
+    const petBreed13 = document.getElementById('breed13').firstChild;
+    const petAge13 = document.getElementById('age13').firstChild;
+    const petGender13 = document.getElementById('gender13').firstChild;
+    const phone13 = document.getElementById('phone13').firstChild;
+    const email13 = document.getElementById('email13').firstChild;
+    petName13.replaceWith("Pet Name: " + fetchedPet13.name);    
+    petBreed13.replaceWith("Breed: " + fetchedPet13.breeds.primary);    
+    petAge13.replaceWith("Age: " + fetchedPet13.age);
+    petGender13.replaceWith("Gender: " + fetchedPet13.gender);
+    phone13.replaceWith('Phone Number: ' + fetchedPet13.contact.phone);
+    email13.replaceWith("Email: " + fetchedPet13.contact.email);
+
+    // image13 section
+    var petImg13Link = fetchedPet13.photos.length > 0 ? fetchedPet13.photos[0].full : undefined;
+
+    if (petImg13Link === undefined) {
+      document.getElementById('pet-img-13').src = "./Assets/no-image-icon.jpg";
+    } else {
+      document.getElementById('pet-img-13').src = petImg13Link;
+    }
+
+     // Card 14
+    
+     const fetchedPet14 = animalData.animals[13];
+     const petName14 = document.getElementById('name14').firstChild;
+     const petBreed14 = document.getElementById('breed14').firstChild;
+     const petAge14 = document.getElementById('age14').firstChild;
+     const petGender14 = document.getElementById('gender14').firstChild;
+     const phone14 = document.getElementById('phone14').firstChild;
+     const email14 = document.getElementById('email14').firstChild;
+     petName14.replaceWith("Pet Name: " + fetchedPet14.name);    
+     petBreed14.replaceWith("Breed: " + fetchedPet14.breeds.primary);    
+     petAge14.replaceWith("Age: " + fetchedPet14.age);
+     petGender14.replaceWith("Gender: " + fetchedPet14.gender);
+     phone14.replaceWith('Phone Number: ' + fetchedPet14.contact.phone);
+     email14.replaceWith("Email: " + fetchedPet14.contact.email);
+ 
+     // image14 section
+     var petImg14Link = fetchedPet14.photos.length > 0 ? fetchedPet14.photos[0].full : undefined;
+ 
+     if (petImg14Link === undefined) {
+       document.getElementById('pet-img-14').src = "./Assets/no-image-icon.jpg";
+     } else {
+       document.getElementById('pet-img-14').src = petImg14Link;
+     }
+
+      // Card 15
+    
+    const fetchedPet15 = animalData.animals[14];
+    const petName15 = document.getElementById('name15').firstChild;
+    const petBreed15 = document.getElementById('breed15').firstChild;
+    const petAge15 = document.getElementById('age15').firstChild;
+    const petGender15 = document.getElementById('gender15').firstChild;
+    const phone15 = document.getElementById('phone15').firstChild;
+    const email15 = document.getElementById('email15').firstChild;
+    petName15.replaceWith("Pet Name: " + fetchedPet15.name);    
+    petBreed15.replaceWith("Breed: " + fetchedPet15.breeds.primary);    
+    petAge15.replaceWith("Age: " + fetchedPet15.age);
+    petGender15.replaceWith("Gender: " + fetchedPet15.gender);
+    phone15.replaceWith('Phone Number: ' + fetchedPet15.contact.phone);
+    email15.replaceWith("Email: " + fetchedPet15.contact.email);
+
+    // image15 section
+    var petImg15Link = fetchedPet15.photos.length > 0 ? fetchedPet15.photos[0].full : undefined;
+
+    if (petImg15Link === undefined) {
+      document.getElementById('pet-img-15').src = "./Assets/no-image-icon.jpg";
+    } else {
+      document.getElementById('pet-img-15').src = petImg15Link;
+    }
+
+     // Card 16
+    
+     const fetchedPet16 = animalData.animals[15];
+     const petName16 = document.getElementById('name16').firstChild;
+     const petBreed16 = document.getElementById('breed16').firstChild;
+     const petAge16 = document.getElementById('age16').firstChild;
+     const petGender16 = document.getElementById('gender16').firstChild;
+     const phone16 = document.getElementById('phone16').firstChild;
+     const email16 = document.getElementById('email16').firstChild;
+     petName16.replaceWith("Pet Name: " + fetchedPet16.name);    
+     petBreed16.replaceWith("Breed: " + fetchedPet16.breeds.primary);    
+     petAge16.replaceWith("Age: " + fetchedPet16.age);
+     petGender16.replaceWith("Gender: " + fetchedPet16.gender);
+     phone16.replaceWith('Phone Number: ' + fetchedPet16.contact.phone);
+     email16.replaceWith("Email: " + fetchedPet16.contact.email);
+ 
+     // image16 section
+     var petImg16Link = fetchedPet16.photos.length > 0 ? fetchedPet16.photos[0].full : undefined;
+ 
+     if (petImg16Link === undefined) {
+       document.getElementById('pet-img-16').src = "./Assets/no-image-icon.jpg";
+     } else {
+       document.getElementById('pet-img-16').src = petImg16Link;
+     }
+
+      // Card 17
+    
+    const fetchedPet17 = animalData.animals[16];
+    const petName17 = document.getElementById('name17').firstChild;
+    const petBreed17 = document.getElementById('breed17').firstChild;
+    const petAge17 = document.getElementById('age17').firstChild;
+    const petGender17 = document.getElementById('gender17').firstChild;
+    const phone17 = document.getElementById('phone17').firstChild;
+    const email17 = document.getElementById('email17').firstChild;
+    petName17.replaceWith("Pet Name: " + fetchedPet17.name);    
+    petBreed17.replaceWith("Breed: " + fetchedPet17.breeds.primary);    
+    petAge17.replaceWith("Age: " + fetchedPet17.age);
+    petGender17.replaceWith("Gender: " + fetchedPet17.gender);
+    phone17.replaceWith('Phone Number: ' + fetchedPet17.contact.phone);
+    email17.replaceWith("Email: " + fetchedPet17.contact.email);
+
+    // image17 section
+    var petImg17Link = fetchedPet17.photos.length > 0 ? fetchedPet17.photos[0].full : undefined;
+
+    if (petImg17Link === undefined) {
+      document.getElementById('pet-img-17').src = "./Assets/no-image-icon.jpg";
+    } else {
+      document.getElementById('pet-img-17').src = petImg17Link;
+    }
+
+     // Card 18
+    
+     const fetchedPet18 = animalData.animals[17];
+     const petName18 = document.getElementById('name18').firstChild;
+     const petBreed18 = document.getElementById('breed18').firstChild;
+     const petAge18 = document.getElementById('age18').firstChild;
+     const petGender18 = document.getElementById('gender18').firstChild;
+     const phone18 = document.getElementById('phone18').firstChild;
+     const email18 = document.getElementById('email18').firstChild;
+     petName18.replaceWith("Pet Name: " + fetchedPet18.name);    
+     petBreed18.replaceWith("Breed: " + fetchedPet18.breeds.primary);    
+     petAge18.replaceWith("Age: " + fetchedPet18.age);
+     petGender18.replaceWith("Gender: " + fetchedPet18.gender);
+     phone18.replaceWith('Phone Number: ' + fetchedPet18.contact.phone);
+     email18.replaceWith("Email: " + fetchedPet18.contact.email);
+ 
+     // image18 section
+     var petImg18Link = fetchedPet18.photos.length > 0 ? fetchedPet18.photos[0].full : undefined;
+ 
+     if (petImg18Link === undefined) {
+       document.getElementById('pet-img-18').src = "./Assets/no-image-icon.jpg";
+     } else {
+       document.getElementById('pet-img-18').src = petImg18Link;
+     }
   }
   
   const petForm = document.querySelector('#pet-form');
