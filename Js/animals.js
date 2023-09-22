@@ -50,8 +50,7 @@ function fetchAnimals(e) {
 
     // Pulling Animal Data from localStorage and storing info as variable = animalData
     var animalData = JSON.parse(localStorage.getItem('responseData'));
-    console.log(animalData);
-   
+       
     // Card 1
     
     const fetchedPet1 = animalData.animals[0];
@@ -76,9 +75,7 @@ function fetchAnimals(e) {
     } else {
       document.getElementById('pet-img-1').src = petImg1Link;
     }
-
-    
-    
+ 
     // Card 2        
     
     const fetchedPet2 = animalData.animals[1];
@@ -153,6 +150,7 @@ function fetchAnimals(e) {
     } else {
       document.getElementById('pet-img-4').src = petImg4Link;
     }
+
     // Card 5
     
     const fetchedPet5 = animalData.animals[4];
@@ -227,6 +225,7 @@ function fetchAnimals(e) {
     } else {
       document.getElementById('pet-img-7').src = petImg7Link;
     }
+
     // Card 8
    
     const fetchedPet8 = animalData.animals[7];
@@ -280,3 +279,4 @@ function fetchAnimals(e) {
 
   const petForm = document.querySelector('#pet-form');
   petForm.addEventListener('submit', fetchAnimals);
+  showAnimals();
