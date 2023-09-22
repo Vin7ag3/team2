@@ -154,6 +154,23 @@ button {
   width: 500px;
   height: 500px;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  width: 1536.2px;
+  height: 56px;
+  background-color: #181c39;
+  color:#f7f2f8;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  
+}
 /* media queries mobile  */
    @media (max-width: 481px) { /* navbar fullscreen on mobile collapse */
     .navbar-nav {
