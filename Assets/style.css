@@ -156,13 +156,13 @@ button {
 }
 
 .footer {
-  display: flex;
-  justify-content: center;
-  padding: 2%;
-  width: 1536.2px;
-  height: 56px;
-  background-color: #181c39;
-  color:#f7f2f8;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #273176;
+  color: white;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
