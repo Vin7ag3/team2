@@ -1,5 +1,6 @@
 function fetchAnimals(e) {
     e.preventDefault();
+    localStorage.removeItem('responseData');
   
     const animal = document.querySelector('#animal').value;
     const zip = document.querySelector('#zip').value;
@@ -35,7 +36,7 @@ function fetchAnimals(e) {
 
           const jsonData = JSON.stringify(data); 
            
-          localStorage.setItem('animalData', jsonData);
+          localStorage.setItem('responseData', jsonData);
 
           window.location.href = 'animals.html';
         })
