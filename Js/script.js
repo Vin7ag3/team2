@@ -33,47 +33,45 @@ function fetchAnimals(e) {
           .then((res) => res.json())
           .then((data) => {
 
-          // window.location.href = `animals.html?data=${encodeURIComponent(JSON.stringify(data.animals))}`;
-  
-            const jsonData = JSON.stringify(data); 
-            showAnimals(data.animals);
-  
-            console.log(jsonData);
-          })
-          .catch((error) => console.error(error));
+          const jsonData = JSON.stringify(data); 
+           
+          localStorage.setItem('animalData', jsonData);
+
+          window.location.href = 'animals.html';
+        })
+        .catch((error) => console.error(error));
       })
       .catch((error) => console.error(error));
 }
 
 /* Geolocation Pop Up */
-let current_location = document.getElementById("location");
-const success = (position) => {
-  const longitude = position.coords.longitude;
-  const latitude = position.coords.latitude;
+// let current_location = document.getElementById("location");
+// const success = (position) => {
+//   const longitude = position.coords.longitude;
+//   const latitude = position.coords.latitude;
   
-  current_location.textContent = `Longitute = ${longitude} \n latitude = ${latitude}`;
-}
-const error = (error) => {
-  current_location.textContent = `Couldn't access your location \n Reason: ${error.message}`;
-}
-const getLocation = () => {
-  if(navigator.geolocation)
-    navigator.geolocation.getCurrentPosition(success,error);
-  else 
-    current_location.textContent = `Your browser does not support this feature`;
-}
+//   current_location.textContent = `Longitute = ${longitude} \n latitude = ${latitude}`;
+// }
+// const error = (error) => {
+//   current_location.textContent = `Couldn't access your location \n Reason: ${error.message}`;
+// }
+// const getLocation = () => {
+//   if(navigator.geolocation)
+//     navigator.geolocation.getCurrentPosition(success,error);
+//   else 
+//     current_location.textContent = `Your browser does not support this feature`;
+// }
 
   const petForm = document.querySelector('#pet-form');
   petForm.addEventListener('submit', fetchAnimals);
 
-  // function to display the animals
+// function to display the animals
   function showAnimals(animals) {
     // display animal data rendering it on the web page
     console.log(animals);
 }
 
-/* NavBar Dropdown Menu*/
-
+// NavBar Dropdown Menu //
   function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }

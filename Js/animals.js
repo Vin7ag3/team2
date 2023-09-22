@@ -276,7 +276,42 @@ function fetchAnimals(e) {
       document.getElementById('pet-img-9').src = petImg9Link;
     }
   }
-
+  
   const petForm = document.querySelector('#pet-form');
   petForm.addEventListener('submit', fetchAnimals);
-  showAnimals();
+
+  /* NavBar Dropdown Menu */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+  function updateButtonText() {
+    var selectedAnimal = document.getElementById("animal").value;
+    document.querySelector(".dropbtn").textContent = selectedAnimal;
+}
+
+document.querySelector("#pet-form button[type='submit']").addEventListener("click", function(e) {
+  var selectedAnimal = document.getElementById("animal").value;
+  console.log("Selected animal: " + selectedAnimal);
+});
+
+const animalSelect = document.getElementById("animal");
+animalSelect.addEventListener("change", updateButtonText);
+
+// close dropdown onclick outside
+window.onclick = function(event) {
+  if(!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+showAnimals();
+
+  
