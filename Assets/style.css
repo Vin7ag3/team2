@@ -4,23 +4,26 @@
     --light: #e6ecfc;
     --darkblue: #273176;
     --gray: #f7f2f8;
-    --white: #ffffff;  
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #efefef;  
 }
 
 * {
   font-family: 'Montserrat', sans-serif;
 }
+
 p {
   margin-bottom: 0rem;;
 }
+
 input {
-  margin: 2px;
+  margin: 14px;
 }
 
 form {
-  position: absolute;
+  position: inherit;
   right: 0px;
-  margin: 100px;
 }
 
 label {
@@ -32,6 +35,11 @@ button {
   border: none;
   color: var(--white);
   border: solid 1px var(--navy);
+}
+
+button:hover {
+  background: var(--light);
+  color: var(--darkblue);
 }
 
 .nav-link {
@@ -59,8 +67,8 @@ button {
   text-align: center;
 }
 
-.navbar-dark .navbar-toggler {
-  border-color: var(--navy)
+.navbar-light .navbar-toggler {
+  border-color: var(--white)
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -75,8 +83,7 @@ button {
 .dropdown-content {
   display: none;
   position: absolute;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  box-shadow: 0px 8px 16px 0px var(--black);
 }
 
 .dropdown:hover .dropdown-content {
@@ -90,8 +97,19 @@ button {
 }
 
 .container {
-  margin-left: 0px;
+  margin-right: 0px;
 }
+
+.containernav {
+  margin-left: 0px;
+  max-width: none;
+}
+
+.input-group {
+  width: auto;
+  margin-inline-start: auto;
+}
+
 .card-body {
   font-size: 13px;
   margin-top: 20px;
@@ -110,20 +128,40 @@ button {
   height: 350px;
 }
 
-/* .cardpad:hover {
-  color: var(--light);
-} */
-
 .pet-imgs {
   max-height: 200px;
 }
 
-.btn {
+.formcat {
+  margin-right: 10px;
+}
+
+.btncon {
   height: 40px;
   width: 105px;
   font-size: 10px;
   border: solid 1px var(--navy);
   padding: 10px;
+}
+
+.btnav {
+  height: 40px;
+  width: 105px;
+  font-size: 10px;
+  border: solid 1px var(--navy);
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  background-color: transparent;
+}
+
+.modal-title {
+  margin-bottom: -10px;
+  text-align: center;
+}
+
+.modal-footer {
+  padding: 3.75rem;
 }
 
 #banner-message {
@@ -145,52 +183,129 @@ button {
   text-align: left;
   transition: all 0.2s;
   margin: 0 auto;
-  width: 500px;
+  width: 390px;
+}
+
+#breed_data_two {
+  padding: 20px;
+  font-size: 12px;
+  text-align: left;
+  transition: all 0.2s;
+  margin: 0 auto;
+  width: 390px;
 }
 
 #breed_image {
   background: var(--white);
   margin: 0 auto;
-  width: 500px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
+}
+
+#breed_image_two {
+  background: var(--white);
+  margin: 0 auto;
+  width: 350px;
+  height: 350px;
+}
+
+#pet-form {
+  width: 100%;
 }
 
 .footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #181c39;
-  color: white;
+  background-color: var(--gray);
+  color: var(--black);
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-  header {
-    flex-direction: column;
-  }
-  
-}
 /* media queries mobile  */
-   @media (max-width: 481px) { /* navbar fullscreen on mobile collapse */
+   @media (max-width: 481px) { 
+    p {
+    padding: 5px;
+   }
+    select {
+    margin-left: 60px;
+   }
+   input {
+    margin-left: 60px;
+   }
     .navbar-nav {
-      height: 100vh;
+    height: 100vh;
+   }
+   .dropdown-menu[data-bs-popper] {
+    top: -50px;
+   }
+   .input-group {
+    margin-top: -120px;
+   }
+   .form-control {
+    font-size: 12px;
+    height: 37px;
+   }
+   .form-select {
+    width: 90px;
+   }
+   .card {
+    height: 525px;
    }
     #pet-form {
     display: none;
    }
-   .btn {
+   #breed_image {
+    height: 300px;
+    width: 287px;
+   }
+   #breed_image_two {
+    height: 300px;
+    width: 287px;
+   }
+   .describebreed {
+    margin: 2px 45px 0px 0px;
+   }
+   .btncon {
     margin: -87px 0px -30px 218px;
+   }
+   .btnav {
+    margin-top: 15px;
+    height: 36px;
+   }
+   .form-switch {
+    margin-left: 80px;
+    padding: 10px;
+    display: inline-block;
   }
 }
 
  /* media queries tablet  */
  @media (min-width: 768px) {
+  .form-switch {
+    margin-left: 105px;
+    display: inline-block;
+  }
+  .footer {
+      position: fixed;
+  }
 }
 
+ /* media queries laptop  */
  @media (min-width: 992px) { 
-  .btn {
+  .btncon {
     margin: -87px 0px -30px 218px;
+   }
+   .btnav {
+    margin-top: 15px;
+    height: 36px;
+   }
+   .form-switch {
+    margin-left: 105px;
+    display: inline-block;
+  }
+  .footer {
+    position: fixed;
   }
 }
 
