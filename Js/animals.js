@@ -8,10 +8,10 @@ function fetchAnimals(e) {
     const clientSecret = 'xTg1ROLZKJUN1oF6E09Vdku0dkgsrjuu3tuMby7W';
     const tokenUrl = 'https://api.petfinder.com/v2/oauth2/token';
   
-    // req body with client credentials grant type
+// req body with client credentials grant type
     const requestBody = `grant_type=client_credentials&client_id=${clientId}&client_secret=${clientSecret}`;
   
-    // pOST request to obtain an access token
+// post request to obtain an access token
     fetch(tokenUrl, {
       method: 'POST',
       headers: {
@@ -22,10 +22,10 @@ function fetchAnimals(e) {
       .then((res) => res.json())
       .then((tokenData) => {
 
-        // extract the access token from the response
+// extract the access token from the response
         const accessToken = tokenData.access_token;
   
-        // access token to fetch animal data
+// access token to fetch animal data
         fetch(`https://api.petfinder.com/v2/animals?type=${animal}&location=${zip}`, {
           method: 'GET',
           headers: {
@@ -48,7 +48,7 @@ function fetchAnimals(e) {
 
   function showAnimals(animals) {
 
-    // Pulling Animal Data from localStorage and storing info as variable = animalData
+// Pulling Animal Data from localStorage and storing info as variable = animalData
     var animalData = JSON.parse(localStorage.getItem('responseData'));
        
     // Card 1

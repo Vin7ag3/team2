@@ -125,11 +125,11 @@ button:hover {
 }
 
 .card {
-  height: 350px;
+  height: 400px;
 }
 
 .pet-imgs {
-  max-height: 200px;
+  max-height: 250px;
 }
 
 .formcat {
@@ -183,7 +183,6 @@ button:hover {
   text-align: left;
   transition: all 0.2s;
   margin: 0 auto;
-  width: 390px;
 }
 
 #breed_data_two {
@@ -192,7 +191,6 @@ button:hover {
   text-align: left;
   transition: all 0.2s;
   margin: 0 auto;
-  width: 390px;
 }
 
 #breed_image {
@@ -224,56 +222,62 @@ button:hover {
 
 /* media queries mobile  */
    @media (max-width: 481px) { 
-    p {
-    padding: 5px;
-   }
-    select {
+  p {
+  padding: 5px;
+  }
+  select {
+  margin-left: 60px;
+  }
+  input {
     margin-left: 60px;
-   }
-   input {
-    margin-left: 60px;
-   }
-    .navbar-nav {
+  }
+  .navbar-nav {
     height: 100vh;
-   }
-   .dropdown-menu[data-bs-popper] {
+  }
+  .dropdown-menu[data-bs-popper] {
     top: -50px;
-   }
-   .input-group {
+  }
+  .input-group {
     margin-top: -120px;
-   }
-   .form-control {
+  }
+  .form-control {
     font-size: 12px;
     height: 37px;
-   }
-   .form-select {
+  }
+  .form-select {
     width: 90px;
-   }
-   .card {
-    height: 525px;
-   }
-    #pet-form {
+  }
+  .card {
+    height: 475px;
+  }
+  #pet-form {
     display: none;
-   }
-   #breed_image {
+  }
+  #breed_image {
     height: 300px;
     width: 287px;
-   }
-   #breed_image_two {
+  }
+  #breed_image_two {
     height: 300px;
     width: 287px;
-   }
-   .describebreed {
+  }
+  #breed_data {
+    width: 340px;
+  }
+  #breed_data_two {
+    width: 340px;
+  }
+  .describebreed {
     margin: 2px 45px 0px 0px;
-   }
-   .btncon {
+  }
+  .btncon {
     margin: -87px 0px -30px 218px;
-   }
-   .btnav {
+  }
+  .btnav {
     margin-top: 15px;
     height: 36px;
-   }
-   .form-switch {
+  }
+  .form-switch {
     margin-left: 80px;
     padding: 10px;
     display: inline-block;
@@ -289,23 +293,35 @@ button:hover {
   .footer {
       position: fixed;
   }
+  #breed_data {
+    width: 390px;
+  }
+  #breed_data_two {
+    width: 390px;
+  }
 }
 
  /* media queries laptop  */
  @media (min-width: 992px) { 
   .btncon {
     margin: -87px 0px -30px 218px;
-   }
-   .btnav {
+  }
+  .btnav {
     margin-top: 15px;
     height: 36px;
-   }
-   .form-switch {
+  }
+  .form-switch {
     margin-left: 105px;
     display: inline-block;
   }
   .footer {
     position: fixed;
+  }
+  #breed_data {
+    width: 390px;
+  }
+  #breed_data_two {
+    width: 390px;
   }
 }
 
