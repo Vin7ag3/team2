@@ -219,7 +219,8 @@ button:hover {
   color: var(--black);
   text-align: center;
 }
-.modal {
+
+.modalban {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -233,7 +234,7 @@ button:hover {
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.modal-content {
+.modal-contentban {
   background-color: var(--light);
   margin: auto;
   padding: 20px;
@@ -254,7 +255,6 @@ button:hover {
   text-decoration: none;
   cursor: pointer;
 }
-
 
 /* media queries mobile  */
    @media (max-width: 481px) { 
