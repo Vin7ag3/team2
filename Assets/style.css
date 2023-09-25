@@ -326,6 +326,10 @@ button:hover {
     margin-left: 105px;
     display: inline-block;
   }
+  .navbar-nav {
+    height:69.6;
+    width: 820;
+  }
   .footer {
       position: fixed;
   }
@@ -334,6 +338,17 @@ button:hover {
   }
   #breed_data_two {
     width: 390px;
+  }
+  #breed_image {
+    height: 350px;
+    width: 350px;
+  }
+  #breed_image_two {
+    height: 350px;
+    width: 350px;
+  }
+  .describebreed {
+    margin: 350px 54px
   }
 }
 
