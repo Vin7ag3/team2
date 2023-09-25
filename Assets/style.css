@@ -322,22 +322,18 @@ button:hover {
 
  /* media queries tablet  */
  @media (min-width: 768px) {
-  .form-switch {
+  form-switch {
     margin-left: 105px;
     display: inline-block;
-  }
-  .navbar-nav {
-    height:69.6;
-    width: 820;
-  }
+  } 
   .footer {
       position: fixed;
   }
   #breed_data {
-    width: 390px;
+    width: 360px;
   }
   #breed_data_two {
-    width: 390px;
+    width: 360px;
   }
   #breed_image {
     height: 350px;
@@ -376,3 +372,22 @@ button:hover {
   }
 }
 
+/* media queries phone */
+@media (max-width: 350px) {
+ .footer {
+  position: fixed;
+ }
+ .form-switch {
+  margin-left: 5px;
+  display: inline-block;
+ } 
+ .btnav {
+  margin-top: 5px;
+  height: 5px;
+  margin-left: 0px;
+  align-self: center;
+ }
+ .btncon {
+  margin: 10px 5px -30px 10px;
+ }
+}
