@@ -335,6 +335,17 @@ button:hover {
   #breed_data_two {
     width: 360px;
   }
+  #breed_image {
+    height: 350px;
+    width: 350px;
+  }
+  #breed_image_two {
+    height: 350px;
+    width: 350px;
+  }
+  .describebreed {
+    margin: 350px 54px
+  }
 }
 
  /* media queries laptop  */
