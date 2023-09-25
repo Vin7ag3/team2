@@ -322,7 +322,7 @@ button:hover {
 
  /* media queries tablet  */
  @media (min-width: 768px) {
-  form-switch {
+  .form-switch {
     margin-left: 105px;
     display: inline-block;
   } 
