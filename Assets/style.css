@@ -6,7 +6,7 @@
     --gray: #f7f2f8;
     --white: #ffffff;
     --black: #000000;
-    --gray: #efefef;  
+    --neutral: #efefef;  
 }
 
 * {
@@ -49,9 +49,9 @@ button:hover {
 }
 
 .navbar {
-    background-color: var(--navy);
-    color: var(--light);
-    padding: 15px;
+  background-color: var(--navy);
+  color: var(--light);
+  padding: 15px;
 }
 
 .cfa {
@@ -259,10 +259,10 @@ button:hover {
 /* media queries mobile  */
    @media (max-width: 481px) { 
   p {
-  padding: 5px;
+    padding: 5px;
   }
   select {
-  margin-left: 60px;
+    margin-left: 60px;
   }
   input {
     margin-left: 60px;
@@ -327,7 +327,7 @@ button:hover {
     display: inline-block;
   } 
   .footer {
-      position: fixed;
+    position: fixed;
   }
   #breed_data {
     width: 360px;
@@ -343,8 +343,11 @@ button:hover {
     height: 350px;
     width: 350px;
   }
-  .describebreed {
-    margin: 350px 54px
+  .me-2 {
+    margin-top: 1px;
+  }
+  .btncon {
+    margin-top: 10px;
   }
 }
 
@@ -352,10 +355,6 @@ button:hover {
  @media (min-width: 992px) { 
   .btncon {
     margin: -87px 0px -30px 218px;
-  }
-  .btnav {
-    margin-top: 15px;
-    height: 36px;
   }
   .form-switch {
     margin-left: 105px;
@@ -372,22 +371,3 @@ button:hover {
   }
 }
 
-/* media queries phone */
-@media (max-width: 350px) {
- .footer {
-  position: fixed;
- }
- .form-switch {
-  margin-left: 5px;
-  display: inline-block;
- } 
- .btnav {
-  margin-top: 5px;
-  height: 5px;
-  margin-left: 0px;
-  align-self: center;
- }
- .btncon {
-  margin: 10px 5px -30px 10px;
- }
-}

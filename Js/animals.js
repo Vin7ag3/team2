@@ -36,7 +36,7 @@ function fetchAnimals(e) {
           .then((data) => {
 
             // contains the JSON response
-            // window.location.href = `animals.html?data=${encodeURIComponent(JSON.stringify(data.animals))}`;
+           
             const jsonData = JSON.stringify(data); // Convert data to a JSON string
             localStorage.setItem('responseData', jsonData);
             showAnimals(data.animals);           
