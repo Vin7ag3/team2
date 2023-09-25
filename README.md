@@ -4,13 +4,17 @@
 
 Furever Friend Finder is an interactive front-end application designed as a collaborative group project with a noble mission — to assist individuals in discovering and adopting rescue animals from local animal shelters. This user-friendly application harnesses the power of local animal shelter APIs to enable users to search for dogs and cats in their vicinity effortlessly. By presenting adoptable animals with crucial details such as name, breed, age, gender, and shelter contact information, we aim to simplify the pet adoption process while connecting pets in need with loving homes.
 
+## Link to Sitemap + Wireframe process work:
+
+https://www.figma.com/file/irsyYNijH6fi6RyLYDU7q8/team-2-wireframe?type=design&node-id=35-0&mode=design&t=fcVm7inDw7z2KguS-0
+
 ## Link to Application:
 
 https://vin7ag3.github.io/team2/index.html
 
 ## Link to Screenshot:
 
-<!-- add screenshot link here -->
+![Opera Snapshot_2023-09-25_193108_vin7ag3 github io](https://github.com/Vin7ag3/team2/assets/48032663/077016aa-14e5-4191-b59a-d38721020e3b)
 
 ## Installation
 
@@ -36,7 +40,7 @@ Live Deployment: You can access the live deployment of Furever Friend Finder by 
 
 ## Credits:
 
-N/A
+Designed by Freepik Free License Images.
 
 ## License:
 

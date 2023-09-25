@@ -8,10 +8,10 @@ function fetchAnimals(e) {
     const clientSecret = 'xTg1ROLZKJUN1oF6E09Vdku0dkgsrjuu3tuMby7W';
     const tokenUrl = 'https://api.petfinder.com/v2/oauth2/token';
   
-  // req body with client credentials grant type
+// req body with client credentials grant type
     const requestBody = `grant_type=client_credentials&client_id=${clientId}&client_secret=${clientSecret}`;
   
-  // post request to obtain an access token
+// post request to obtain an access token
     fetch(tokenUrl, {
       method: 'POST',
       headers: {
@@ -21,10 +21,10 @@ function fetchAnimals(e) {
     })
       .then((res) => res.json())
       .then((tokenData) => {
-  // extract the access token from the response
+// extract the access token from the response
         const accessToken = tokenData.access_token;
   
-  // access token to fetch animal data
+// access token to fetch animal data
         fetch(`https://api.petfinder.com/v2/animals?type=${animal}&location=${zip}`, {
           method: 'GET',
           headers: {
@@ -44,24 +44,6 @@ function fetchAnimals(e) {
       })
       .catch((error) => console.error(error));
 }
-
-/* Geolocation Pop Up */
-// let current_location = document.getElementById("location");
-// const success = (position) => {
-//   const longitude = position.coords.longitude;
-//   const latitude = position.coords.latitude;
-  
-//   current_location.textContent = `Longitute = ${longitude} \n latitude = ${latitude}`;
-// }
-// const error = (error) => {
-//   current_location.textContent = `Couldn't access your location \n Reason: ${error.message}`;
-// }
-// const getLocation = () => {
-//   if(navigator.geolocation)
-//     navigator.geolocation.getCurrentPosition(success,error);
-//   else 
-//     current_location.textContent = `Your browser does not support this feature`;
-// }
 
   const petForm = document.querySelector('#pet-form');
   petForm.addEventListener('submit', fetchAnimals);
